@@ -1,22 +1,22 @@
 .. _ready:
 
-**"Ready to run"** JenNode Kit
+**"Ready to run"** Rialto Kit
 ******************************
 
 **Ready to run** is a pre-programmed kit that perform basic function for Jennic evaluation purpose.
-We can find two JenNode board, first one as Coordinator and second as End-Node.
+We can find two Rialto board, first one as Coordinator and second as End-Node.
 
 .. image:: _jn_photo/seriz_coord.jpg
 
 .. important::
 
- **Before using JenNode Boards as a SerizII plugin, read note inside 'important' box on chapter** :ref:`seriz`
+ **Before using Rialto Boards as a SerizII plugin, read note inside 'important' box on chapter** :ref:`seriz`
 
-Working with JenNode board
+Working with Rialto board
 --------------------------
 
-Simply use of JenNode Board, is to plug Coordinator and End-Node on two USB port of your PC
-See at com port configured, and then open two HyperTerminal sessions to evaluate JenNode network
+Simply use of Rialto Board, is to plug Coordinator and End-Node on two USB port of your PC
+See at com port configured, and then open two HyperTerminal sessions to evaluate Rialto network
 
 **Coordinator Serial Monitor main menu**
 
@@ -41,7 +41,7 @@ First Lab
 
 The Lab1 that you can perform, is by following the next steps:
 
-- Connect Coordinator and End-Node JenNode boards on USB port of your PC
+- Connect Coordinator and End-Node Rialto boards on USB port of your PC
 - Open terminals, connect appropriate serial port and check correct settings (see  :ref:`hyper`)
 - Wait for network connection (blue-led will flash fast both in Coordinator and End-Node)
 - See at red-led flash (poll, trasmit or receive, default is 8 seconds)
@@ -67,8 +67,8 @@ The processo is:
 - the end-node PAN-ID is set to the network PAN-ID
 - data can be now exchanged by end node to coordinator, the Vcard data.
 
-JenNode board is designed as a SerizII plugin (see :ref:`seriz`). In Lab1, plug End-Node board on SerizII and Coordinator on USB port of your PC. 
-If you want, you can connect JenNode End-Node board, plugged on SerizII, to PC using USB type-A extension cable. Serial Monitor will run, without affecting SerizII communications.
+Rialto board is designed as a SerizII plugin (see :ref:`seriz`). In Lab1, plug End-Node board on SerizII and Coordinator on USB port of your PC. 
+If you want, you can connect Rialto End-Node board, plugged on SerizII, to PC using USB type-A extension cable. Serial Monitor will run, without affecting SerizII communications.
 Then, follow next steps:
 
 - Open terminals, connect appropriate serial port and check correct settings (see  :ref:`hyper`)
@@ -97,7 +97,7 @@ The processo is:
 - the end-node PAN-Id is set to the network PAN-ID
 - the coordinator is put back on the original networn PAN-ID, to which the end-node is now added
 
-In Lab3, plug Coordinator on SerizII and End-Node on USB port of your PC. Simillary to Lab2, you can connect JenNode Coordinator board, plugged on SerizII, to PC. After this, see here steps for Lab2.
+In Lab3, plug Coordinator on SerizII and End-Node on USB port of your PC. Simillary to Lab2, you can connect Rialto Coordinator board, plugged on SerizII, to PC. After this, see here steps for Lab2.
 
 - Open terminals, connect appropriate serial port and check correct settings (see  :ref:`hyper`)
 - See SerizII display: it will inform that JN5168 Coordinator is installed.
@@ -113,7 +113,7 @@ In Lab3, plug Coordinator on SerizII and End-Node on USB port of your PC. Simill
  Sleep Wake Time can be set changing default definition in define.h file. For more information, read :ref:`sleep`
 
 
-After this 3 Labs, use :ref:`monitor` and enjoy with JenNode Boards!!
+After this 3 Labs, use :ref:`monitor` and enjoy with Rialto Boards!!
 
 
 

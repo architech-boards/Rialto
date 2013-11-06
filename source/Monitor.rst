@@ -7,10 +7,10 @@ Serial Monitor guide
 Using serial monitor
 ====================
 
-| You can use USB built-in dongle on JenNode Board for programming or Serial Monitor purpose.
+| You can use USB built-in dongle on Rialto Board for programming or Serial Monitor purpose.
 | The only attention is that you must "deselect" COM port in the Flash GUI Tool (or close program) before connect with Terminal (i.e. HyperTerminal)
 | This is because the same COM port is used by Flash Programmer and (when application firmware starts) by Serial Monitor.
-| *Example: if your JenNode Board is connected to COM4, if possible, change COM Port settings in Flash GUI Programmer BEFORE attempting to connect HyperTerminal*
+| *Example: if your Rialto Board is connected to COM4, if possible, change COM Port settings in Flash GUI Programmer BEFORE attempting to connect HyperTerminal*
 | Best way is to close NXP Flash GUI Tool before connect Terminal to device COM port. 
 
 .. image:: _jn_images/com_ch.jpg

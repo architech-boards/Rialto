@@ -4,10 +4,10 @@
 Tip & Tricks
 ************
 
-Stand-alone use of JenNode Boards
+Stand-alone use of Rialto Boards
 ---------------------------------
 
-| **"Ready to run" JenNode boards** are designed to quick and fast evaluation with PC and SerizII board. 
+| **"Ready to run" Rialto boards** are designed to quick and fast evaluation with PC and SerizII board. 
 | You can use the board both connected with PC for stand-alone evaluation or personal purpose.
 | In this case, take care at USB com port installed for each board. 
 | For full informations about, see :ref:`ready` 
@@ -21,13 +21,13 @@ Serial channel details
 For best developement purpose, you can change serial monitor out:
 
 - USB to serial adapter (TTL out)
-- Custom cable to connect 6 pin strip from JenNode Board to USB serial adapter
+- Custom cable to connect 6 pin strip from Rialto Board to USB serial adapter
 
 .. image:: _jn_photo/serial_ext.jpg
 
 ::
 
- JenNode 6 pin strip schematich
+ Rialto 6 pin strip schematich
 
  pin 1 --> RxD TTL level
  pin 2 --> TxD TTL level
@@ -42,7 +42,7 @@ For best developement purpose, you can change serial monitor out:
 How to change Serial Monitor out
 ================================
 
-| At the top of **JenNode_Coord.c** and **JenNode_EndD** file you can find a variable statement 
+| At the top of **Rialto_Coord.c** and **Rialto_EndD** file you can find a variable statement 
 
 *uint8 vprintf_uart = E_AHI_UART_0;* 
  
@@ -59,7 +59,7 @@ You can change it to E_AHI_UART_1, and serial monitor will communicate using ser
 
 .. important::
 
- Serial channel 1 (E_AHI_UART_1) is default communication channel to SerizII board. When you switch JenNode Serial Monitor out to this channel, all SerizII communication functions will be disabled. The result of this change is the loss of functionality with SerizII
+ Serial channel 1 (E_AHI_UART_1) is default communication channel to SerizII board. When you switch Rialto Serial Monitor out to this channel, all SerizII communication functions will be disabled. The result of this change is the loss of functionality with SerizII
  
 .. _sleep:
 
@@ -69,7 +69,7 @@ Poll and Sleep settings
 In the file **define.h** you can find the Poll and Sleep settings. By defualt, polling is executed every 8 seconds, the number of maximum poll failure is 4. This gives a maximun non-response time equal to 32 seconds: if End-Node will not be found for this timing, Coordinator will disassociate it from Network. End-Node use instead a polling timeout, that is equal ((POLL_TIME * MAX_FAIL)+1) seconds, and by default gives a value of 33 seconds. 
 Then, the time necessary for disassociation will be just over 30 seconds.
 
-The Sleep time is by default 15 seconds: this means that every End-Node in sleep mode will awakes every 15 seconds, sends sensors data and will return in sleep mode. With this setting, the sleep mode has a duration of about 5-6 minutes. After this time, the device dies. You can change the Sleep Time definition and make it more great to obtain a more long device life.
+The Sleep time is by default 15 seconds: this means that every End-Node in sleep mode will awakes every 15 seconds, sends sensors data and will return in sleep mode. With this setting, the sleep mode has a duration of about 5 minutes. After this time, the device dies. You can change the Sleep Time definition and make it more great to obtain a more long device life.
 
 When in Sleep-mode, if End-Node will not find a valid Coordinator for SLEEP_RETRY times, stops itself with Blue-Led on. By default, this gives End_Node timeout equal to 45 seconds. After this time, End-Node lights up Blue-Led and let it die. You can change number of SLEEP_RETRY in order to have more retry (only during sleep mode)
 
@@ -103,7 +103,7 @@ When in Sleep-mode, if End-Node will not find a valid Coordinator for SLEEP_RETR
 Led functions
 -------------
 
-JenNode board has 2 LEDs, one blue and one red, which indicate the following features
+Rialto board has 2 LEDs, one blue and one red, which indicate the following features
 
 **Coordinator**
 

@@ -123,7 +123,7 @@ Upgrading Flash GUI tool (for JN5168)
 
  .. image:: _jn_images/flash_update_3.jpg
  
-**Now Jennic Eclipse setup is complete and the suite is ready for work with JenNode Project!**
+**Now Jennic Eclipse setup is complete and the suite is ready for work with Rialto Project!**
 
 | 
 | 
@@ -137,7 +137,7 @@ Upgrading Flash GUI tool (for JN5168)
 INSTALLING DRIVER FOR USB DONGLE
 --------------------------------
 
-With some release of Windows Xp, you must manually install the USB drivers of the JenNode board.
+With some release of Windows Xp, you must manually install the USB drivers of the Rialto board.
 
  .. image:: _jn_images/winxp.png
  

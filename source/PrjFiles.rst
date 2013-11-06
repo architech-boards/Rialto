@@ -6,9 +6,9 @@ Firmware specification
 Firmware overview
 -----------------
 
-| The JenNode_Jennic firmware has been developed using **JN-AN-1174-JN516x-802-15-4-Application-Template** skeleton code.
+| The Rialto_Jennic firmware has been developed using **JN-AN-1174-JN516x-802-15-4-Application-Template** skeleton code.
 | This template include basic application of IEEE802-15-4 stack and some callback function that can be personalized and help end-user application development.
-| More detail regarding the structure of this template can be found on document "JN-AN-1174-IEEE802.15.4-App-Template.pdf" inside "Doc" folder included in JenNode_Jennic zip file
+| More detail regarding the structure of this template can be found on document "JN-AN-1174-IEEE802.15.4-App-Template.pdf" inside "Doc" folder included in Rialto_Jennic zip file
 
 .. image:: _jn_images/document.jpg
 
@@ -40,13 +40,13 @@ Firmware restrictions
 Main firmware features
 ----------------------
 
-JenNode_jennic firmware is based on IEEE802.15.4 network stack. The application also features a serial monitor which, with simple control commands, allows you to evaluate the status of the network and perform basic functions of data transmission / reception.
+Rialto_jennic firmware is based on IEEE802.15.4 network stack. The application also features a serial monitor which, with simple control commands, allows you to evaluate the status of the network and perform basic functions of data transmission / reception.
 The network topology is a "star", with one Coordinator and more End-Node.
 The coordinator accepts up to a maximum of 8 End-Node, assigns them a short address and operates a regular polling of all devices associated to check your status. When a End-Node poll fails for 4 next times, the node is automatically dissociated from the Coordinator. Similary, when End-Node doesn't receive poll and the polling timeout is expired, dissociates itself automatically and restarts the scan sequence to search for a coordinator.
 This is needed because that the network stack IEEE802.15.4, included in the JN-SW-4065 libraries, doesn't seem manage orphan devices.
 In other words, this mode of operation (polling) allows for constantly monitoring the status of the network and update the presence or absence of networked devices.
 
-JenNode Board End-Node firmware implements a demonstration of Low Power functionality. Using Serial Monitor command 'Z', you can place the board in "sleep mode".
+Rialto Board End-Node firmware implements a demonstration of Low Power functionality. Using Serial Monitor command 'Z', you can place the board in "sleep mode".
 As a result, Serial Monitor will be disabled, and any Serial Monitor commands will not performed when board is in sleep mode. Please note that restart is the only way to exit from sleep mode. 
 
 Project structure
@@ -56,11 +56,11 @@ Project structure
 
 The application’s file structure includes the following folders:
 
-• JenNode_Coord – contains source files and makefiles for the PAN Co-ordinator
-	• **JenNode_Coord.c** specific application file for Coordinator functions (see chapter 3.2.1 of "JN-RM-2024" resource manual for main details)
+• Rialto_Coord – contains source files and makefiles for the PAN Co-ordinator
+	• **Rialto_Coord.c** specific application file for Coordinator functions (see chapter 3.2.1 of "JN-RM-2024" resource manual for main details)
 	
-• JenNode_EndD – contains source files and makefiles for an End Device
-	• **JenNode_EndD.c** specific application file for End-Node functions (see chapter 3.2.2 of "JN-RM-2024" resource manual for main details)
+• Rialto_EndD – contains source files and makefiles for an End Device
+	• **Rialto_EndD.c** specific application file for End-Node functions (see chapter 3.2.2 of "JN-RM-2024" resource manual for main details)
 
 • Common – contains:
 	• **application.c** common functions used both by coordinator that end-node
@@ -72,7 +72,7 @@ The application’s file structure includes the following folders:
 Firmware & documents download
 -----------------------------
 
-Firmware project file JenNode_Jennic.zip, installation file Install.zip and all other documentation for the JenNode project can be found at Silica ArchiTech page. Registration is needed to access at download section.
+Firmware project file Rialto_Jennic.zip, installation file Install.zip and all other documentation for the Rialto project can be found at Silica ArchiTech page. Registration is needed to access at download section.
 Click `here <http://www.silica.com/architech.html>`_ to go to ArchiTech main page.
 
 
