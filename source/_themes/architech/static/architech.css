@@ -1368,13 +1368,13 @@ select:focus:invalid:focus {
   -moz-box-shadow: 0 0 6px #f8b9b7;
   box-shadow: 0 0 6px #f8b9b7;
 }
-.rtd-badge.rtd {
-  background: #3b4449;
-  background: url(//media.readthedocs.org//images/badge-rtd.png) scroll top left no-repeat;
-  border: 1px solid #282E32;
-  width: 41px;
-  right: 5px;
-  display: none;
+.rst-versions.rst-badge .rst-current-version {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 6px;
+    display: none;
+    text-align: center;
 }
 .form-actions {
   padding: 19px 20px 20px;
