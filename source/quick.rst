@@ -97,7 +97,7 @@ Rialto Board FW installation & setup
 
 .. image:: _jn_images/wise_work_folder.jpg 
 
-- Unzip all files from Wise_Jennic.zip into the folder **C:\\Jennic\\Application\\Rialto_Jennic** just created 
+- Unzip all files from Rialto_Jennic_1_0.zip into the folder **C:\\Jennic\\Application\\Rialto_Jennic** just created 
 
 .. image:: _jn_images/folder.jpg 
 
