@@ -7,10 +7,9 @@ Welcome to Rialto Board by Silica Architech's documentation!
 ===============================================================
 
 :Version: 1.00
-:Copyright: (C)2013 Silica an Avnet company
+:Copyright: (C)2016 Avnet Silica company
 :Date: 30 july 2013
 
-.. image:: _jn_images/silica.png
 .. image:: _jn_images/nxplogo.gif
 .. image:: _jn_images/jennic.gif
 
